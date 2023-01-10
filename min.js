@@ -1,6 +1,20 @@
 const min = function(numbers) {
   // Write code here that returns the smallest value in numbers
-}
+  // Made a variable that represented the first value of the array
+  let result = numbers[0];
+  // Create a for loop that will iterate through the array
+  let i = 0;
+  for (i = 0; i < numbers.length; i++) {
+    console.log(numbers[i]);
+    // Use an if statement to find the numbers that are smaller than the result
+    if (result >= numbers[i]) {
+      // If a smaller number is found then replace with the current result
+      result = numbers[i];
+    }
+  }
+  console.log("result is:", result);
+  return result;
+};
 
 
 /*
